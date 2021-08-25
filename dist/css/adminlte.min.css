@@ -17,4 +17,15 @@
 .card-default .card-header
 {
     cursor:pointer;
+
+.deliveryboylink
+{
+    vertical-align:top !important;
+    padding-top:8px !important;
+}
+.searchboxtextbox
+{
+    display:inline-block !important;
+    width:85% !important;
+    margin-right:10px !important;
 }
