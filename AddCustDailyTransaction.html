@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Advanced form elements</title>
+  <title>AdminLTE 3 | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
@@ -14,8 +14,9 @@
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
+
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -23,7 +24,7 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      
+
     </ul>
 
    
@@ -353,70 +354,167 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Edit Bottle Type Master</h1>
-          </div>
+            <h1 class="m-0 text-dark">Attendance</h1>
+          </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Edit Bottle Type Master</li>
+              <li class="breadcrumb-item active">Attendance</li>
             </ol>
-          </div>
-        </div>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
       </div><!-- /.container-fluid -->
-    </section>
+    </div>
+    <!-- /.content-header -->
 
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <form role="form">
-          <div class="card-body col-md-6">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Bottle Type<span style="color:red">*</span></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" >
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1"><label>Rate <span style="color:red">*</span></label></label>
-              <input type="text" class="form-control" id="exampleInputPassword1" >
-            </div>
-            <div class="form-group">
-              <label>Used By <span style="color:red">*</span></label>
-              <select class="form-control select2" style="width: 100%;">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <!-- <div class="card-header">
+                <h3 class="card-title">DataTable with default features</h3>
+              </div> -->
+              <!-- /.card-header -->
+
+              <div class="card-body">
                 
-                <option>Delivery Boy</option>
-                <option>Dealer</option>
-                
-              </select>
+                <!-- <div class="card-header" style="text-align:right;" >
+                  <button type="button"class="btn btn-primary"><a href="AddCustomer.html">Add New</a></button>
+                </div> -->
+                <div class="row">
+                <div class="col-md-6">
+                <div class="form-group searchboxtextbox">
+
+                  <label>Month <span style="color: red">*</span></label>
+      <div>
+                  <select name="cmbArea" class="form-control " id="txt_area" required="">
+        <option value="">---Select---</option>
+                      
+        <option value="01">January</option>
+        <option value="02">Febuary</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08" selected="">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+
+                                              </select>
+                                              <br/><input type="submit" value="Show" name="btnSubmit" class="btn btn-success">
+      </div>
+                  
+               </div>
+              
+               
+  
+  </div> 
+          <div class="col-md-6">
+          <div class="form-group"> <label>Year <span style="color: red">*</span></label>
+          <input type="text"  class="form-control "></div>
             </div>
-            
           
-            <div class="form-group">
-              <label for="exampleInputPassword1"><label>Fixed bottle/Jug @ party stock ? <span style="color:red">*</span></label></label>
-              <input type="radio" class="form-radio-label" name="fixedbottle" id="exampleInputPassword1" > Yes 
-              <input type="radio" class="form-radio-label" name="fixedbottle" id="exampleInputPassword1" checked> No
+  </div>
+                
+                <div class="" style="text-align:right;margin-bottom:10px;margin-top:10px;">
+                  <div class="dt-buttons btn-group"><a class="btn btn-default buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Copy</span></a><a class="btn btn-default buttons-csv buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>CSV</span></a><a class="btn btn-default buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Excel</span></a><a class="btn btn-default buttons-pdf buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>PDF</span></a><a class="btn btn-default buttons-print" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Print</span></a></div>
+                </div>
+
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                      <th>Seq. No</th>
+                      <th>Customer</th>
+                      <th>20 L Jug</th>
+                      <th>20 L Bottle</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                      
+                      <th>5</th>
+                      <th>6</th>
+                      <th>7</th>
+                      <th>8</th>
+                      <th>9</th>
+                      <th>10</th>
+                      <th>11</th><th>12</th><th>13</th><th>14</th><th>15</th>
+                      <th>16</th><th>17</th><th>18</th><th>19</th><th>20</th>
+                      <th>21</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th>
+                      <th>27</th><th>28</th><th>29</th><th>30</th><th>31</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>1</td>
+                      <td>Aakruti - Bhavik bhai</td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td><td>1</td><td>1</td><td>1</td>
+                      <td>1</td><td>1</td><td>1</td><td>1</td>
+                      <td>1</td><td>1</td><td>1</td><td>1</td>
+                      <td>1</td><td>1</td><td>1</td><td>1</td>
+                      <td>1</td><td>1</td><td>1</td>
+                      
+                      <td>1</td><td>1</td><td>1</td>
+                      <td>1</td><td>1</td><td>1</td>
+                      <td>1</td><td>1</td><td>1</td>
+                      <td>1</td><td>1</td><td>1</td>
+                    </tr>
+                    <tr><td>2</td>
+                      <td>Town feb. - Viren bhai</td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td><td>0</td><td>1</td><td>0</td>
+                      <td>1</td><td>0</td><td>1</td><td>0</td>
+                      <td>1</td><td>0</td><td>1</td><td>0</td>
+                      <td>1</td><td>0</td><td>1</td><td>0</td>
+                      <td>1</td><td>0</td><td>1</td>
+                      
+                      <td>0</td><td>1</td><td>0</td>
+                      <td>1</td><td>0</td><td>1</td>
+                      <td>0</td><td>1</td><td>0</td>
+                      <td>1</td><td>0</td><td>1</td>
+                    </tr>
+                    
+                    </tbody>
+                    <!-- <tfoot>
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+                      <th>Engine version</th>
+                      <th>CSS grade</th>
+                    </tr>
+                    </tfoot> -->
+                  </table>
+              </div>
+              <!-- /.card-body -->
             </div>
-
           </div>
-          <!-- /.card-body -->
-
-          <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Add</button>
-          </div>
-        </form>
+        </div>
+       
+        
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.0.5
     </div>
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-    reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -427,7 +525,6 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="plugins/datatables/jquery.dataTables.min.js"></script>
@@ -435,7 +532,22 @@
 <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <script src="dist/js/adminlte.js"></script>
-<!-- Page script -->
-
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
 </body>
 </html>
