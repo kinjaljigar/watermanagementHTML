@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Advanced form elements</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+    </ul>
+
+   
+    
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Dashboard</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         
+         
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Master
+                <i class="fas fa-angle-left right"></i>
+                <!-- <span class="badge badge-info right">6</span> -->
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="ListBottleType.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Bottler Type Master</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ListPlan.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>plan Master</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ListCountry.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Country Master</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ListState.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>State Master</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ListCity.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>City Master</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ListArea.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Area Master</p>
+                </a>
+              </li>
+             
+            </ul>
+
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         
+         
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Customer Management
+                    <i class="fas fa-angle-left right"></i>
+                    
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="ListCustomer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer</p>
+                    </a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a href="ListCusBoyDailyRel.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer Delivery Boy <br/>Relation Report</p>
+                    </a>
+                  </li>
+                
+
+                  <li class="nav-item">
+                    <a href="AddCustDailyTransaction.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daily Transaction Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="AddCustMonthlyTransaction.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Monthly Transaction Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="ListClosedCustomer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Closed Customer</p>
+                    </a>
+                  </li>
+                  
+                 
+                </ul>
+
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         
+         
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-copy"></i>
+                      <p>
+                        Delivery Boy Management
+                        <i class="fas fa-angle-left right"></i>
+                        
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="ListDeliveryBoy.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Delivery Boy Master</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="ListDeliveryBoyBaseBottle.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Delivery Boy  Base Bottle</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="ListDelBoyAraRel.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Delivery Boy Area Report</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="ListCusBoyDailyRel.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Delivery Boy - Customer <br/>Relation Report</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="ListDelBoyInOut.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Delivery Boy In/Out</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Daily Transaction Report</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Monthly Transaction Report</p>
+                        </a>
+                      </li>
+
+                      <!-- <li class="nav-item">
+                        <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Payment Calculation Report</p>
+                        </a>
+                      </li> -->
+                      
+                     
+                    </ul>
+
+
+
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         
+         
+                      <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                          <i class="nav-icon fas fa-copy"></i>
+                          <p>
+                            Dealer Management
+                            <i class="fas fa-angle-left right"></i>
+                            
+                          </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                          <li class="nav-item">
+                            <a href="ListDealer.html" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Dealer Master</p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="ListDealerPlanRel.html" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Dealer Plan Relation</p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="ListDealerDailyTran.html" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Dealer Daily Transaction</p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="ListDealerDateWiseTrans.html" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Datewise <br/>Transaction Report</p>
+                            </a>
+                          </li>
+                          <!-- <li class="nav-item">
+                            <a href="rptDealerLedger.html" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Dealer Ledger</p>
+                            </a>
+                          </li> -->
+                          
+                          
+                         
+                        </ul>
+
+
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         
+         
+                          <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                              <i class="nav-icon fas fa-copy"></i>
+                              <p>
+                                Collector Management
+                                <i class="fas fa-angle-left right"></i>
+                                
+                              </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                              <li class="nav-item">
+                                <a href="ListCollector.html" class="nav-link">
+                                  <i class="far fa-circle nav-icon"></i>
+                                  <p>Collectors</p>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="ListCollectorAraRel.html" class="nav-link">
+                                  <i class="far fa-circle nav-icon"></i>
+                                  <p>Collector - Area Relation <br/>Report</p>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="ListCollectorCustRel.html" class="nav-link">
+                                  <i class="far fa-circle nav-icon"></i>
+                                  <p>Collector - Customer Report</p>
+                                </a>
+                              </li>
+                             
+                              
+                             
+                            </ul>
+
+
+
+                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         
+         
+                              <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                  <i class="nav-icon fas fa-copy"></i>
+                                  <p>
+                                    Bill Management
+                                    <i class="fas fa-angle-left right"></i>
+                                    
+                                  </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                  <li class="nav-item">
+                                    <a href="GenerateInvoice.html" class="nav-link">
+                                      <i class="far fa-circle nav-icon"></i>
+                                      <p>Generate Invoice</p>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="ListCustInvoice.html" class="nav-link">
+                                      <i class="far fa-circle nav-icon"></i>
+                                      <p>Customer Invoice List</p>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="ListDealerInvoice.html" class="nav-link">
+                                      <i class="far fa-circle nav-icon"></i>
+                                      <p>Dealer Invoice List</p>
+                                    </a>
+                                  </li>
+                                 
+                                  
+                                 
+                                </ul>
+          </li>
+         
+          
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Add Delivery Boy In Out</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Add Delivery Boy In Out</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <form id="stringLengthForm" class="form-horizontal bv-form" data-bv-feedbackicons-valid="glyphicon glyphicon-ok" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" role="form" action="https://synctechsolutions.in/sfour/StoreDelBoyInOut" method="post" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+          <input type="hidden" name="_token" value="r6ikTc1XVhnlMCkEhP4XQi9GRYGHuDaZfWYmoFyM">
+
+          
+
+
+          <div class="form-group has-feedback"><label class="col-md-2">Date</label>
+  <div class="col-md-4">
+              <input type="date" value="2021-09-01" id="dt_dot" name="dt_dot" class="form-control" required="" placeholder="dd-mm-yyyy" data-bv-field="dt_dot"><i style="display: none;" class="form-control-feedback" data-bv-icon-for="dt_dot"></i>
+  <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="dt_dot" data-bv-result="NOT_VALIDATED">Please enter a value</small></div>
+          </div>
+<!--<div class="form-group">
+              <label class="col-md-2">In/Out</label>
+              <div class="col-md-4">
+              <select name="txt_inout" id="txt_inout" class="form-control">
+                  <option value="-1">---Select---</option>
+                  <option >In</option>
+                  <option >Out</option>
+
+              </select>
+              </div>
+          </div>-->
+
+          <div class="form-group">
+              <div class="col-md-1"> &nbsp;</div>
+              <div class="col-md-11">
+                  <table class="table">
+                      <tbody><tr>
+                          <th><p style="color:red">Bottle Type</p></th>
+                          
+                              <th>15 l jug</th>
+
+                          
+                              <th>20 l Bottle Fix</th>
+
+                          
+                              <th>20 L Fix Bottle</th>
+
+                          
+                              <th>20 L Fix Jug</th>
+
+                          
+                              <th>20 l Jug</th>
+
+                          
+                              <th>20 l jug fix</th>
+
+                                                          </tr>
+                                              <tr>
+                              <td>ABHISHEK HOTILAL BATHAM - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>ABHISHEK HOTILAL BATHAM - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>ANIL DINESHBHAI RATHOD - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>ANIL DINESHBHAI RATHOD - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>ASHOKBHAI BHAGVATIPRASAD KURIT - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>ASHOKBHAI BHAGVATIPRASAD KURIT - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>Jashu - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>Jashu - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>JITENDRA KUMAR GULABSING RATHOD - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>JITENDRA KUMAR GULABSING RATHOD - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>Jitu - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>Jitu - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>Keyur - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>Keyur - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>Manoj - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>Manoj - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>Monu - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>Monu - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>Pintu - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>Pintu - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>Sachin - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>Sachin - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                              <tr>
+                              <td>SANJAY BABULAL RAVAL - Out</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              <tr>
+                              <td>SANJAY BABULAL RAVAL - In</td>
+          
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                              
+                                  <td><input type="text" class="form-control" id="txt_nof[]" name="txt_nof[]" value="0" requiredx="" size="15"> </td>
+
+                                                                      <!--<td></td>-->
+                              </tr>
+                              
+                                                          
+                  </tbody></table>
+              </div>
+
+          </div>
+
+
+         
+          
+
+
+
+
+
+          
+
+
+
+
+         
+
+
+          <div>
+              <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit" id="saveRecord"><strong>Save</strong>
+              </button>
+
+          </div>
+
+
+
+      </form>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.5
+    </div>
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="dist/js/adminlte.js"></script>
+<!-- Page script -->
+
+</body>
+</html>

@@ -364,12 +364,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Add Delivery Boy</h1>
+            <h1>Dealer Collection</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Delivery Boy</li>
+              <li class="breadcrumb-item active"> Dealer Collection</li>
             </ol>
           </div>
         </div>
@@ -383,174 +383,62 @@
         <!-- SELECT2 EXAMPLE -->
         <div class="card card-default">
           <div class="card-header" data-card-widget="collapse">
-            <h3 class="card-title" >Personal Information</h3>
+            <h3 class="card-title" >Information</h3>
 
             <div class="card-tools">
-               <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-              <!--<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button> -->
-            </div>
-          </div>
-          <!-- /.card-header -->
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Name<span style="color:red">*</span></label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" >
-                </div>
-                <!-- /.form-group -->
-                <div class="form-group">
-                  <label>Address<span style="color:red">*</span></label>
-                 <textarea  class="form-control" id="address"></textarea>
-                </div>
-                <!-- /.form-group -->
-              </div>
-              <!-- /.col -->
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Phone No.</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" >
-                </div>
-                <!-- /.form-group -->
-                <div class="form-group">
-                  <label>Vehicle No</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" >
-                </div>
-                <!-- /.form-group -->
-              </div>
-              <!-- /.col -->
-
-              <div class="col-md-6">
-                 <!-- /.form-group -->
-                <div class="form-group">
-                  <label>Vehicle Type</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" >
-                </div>
-                <!-- /.form-group --><div class="form-group">
-                <label>Is Active?</label>
-                <input type="radio" name="active"> Yes &nbsp;
-                <input type="radio" name="active"> No (Closed DeliveryBoy)
-              </div>
-              </div>
-
-           
-             
-            </div>
-            <!-- /.row -->
-
-            
-            <!-- /.row -->
-          </div>
-          <!-- /.card-body -->
-         
-        </div>
-        <!-- /.card -->
-
-        <!-- SELECT2 EXAMPLE -->
-        <div class="card card-default collapsed-card">
-          <div class="card-header" data-card-widget="collapse">
-            <h3 class="card-title" >Area Relation</h3>
-
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i></button>
-             
-            </div>
-          </div>
-          <!-- /.card-header -->
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Date</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" >
-                </div>
-                
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">BAPUNAGAR</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">CHINA MARKET-1</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">DOSIWADA NI POLE</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">FACTORY CARD</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Thursday</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Friday</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Saturday</label>
-                </div>
-                <!-- /.form-group -->
-              </div>
-
-
-            
-
-             
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.card-body -->
-         
-        </div>
-        
-
-         <!-- SELECT2 EXAMPLE -->
-         <div class="card card-default collapsed-card">
-          <div class="card-header" data-card-widget="collapse">
-            <h3 class="card-title" >Bottle Information</h3>
-
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i></button>
+              <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
               <!-- <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button> -->
             </div>
           </div>
           <!-- /.card-header -->
-          <div class="card-body" style="display:none;">
-            <div class="row">
+          <div class="card-body">
+            <form id="stringLengthForm" class="form-horizontal bv-form" data-bv-feedbackicons-valid="glyphicon glyphicon-ok" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" role="form" action="https://synctechsolutions.in/sfour/StoreCustomerPaymentCollection" method="post" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+              <input type="hidden" name="_token" value="r6ikTc1XVhnlMCkEhP4XQi9GRYGHuDaZfWYmoFyM">
 
-              
-              
-
-
-                 <!-- /.col -->
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Base Bottles - Deposit of Bottles/Jugs ( Fixed bottle/Jug @party stock  )</label>
-                  <table>
-                    <tbody>
-                                          <tr>
-                  <td>20 L Fix Jug</td>
-                  <td><input type="number" class="form-control" id="txtB15" name="txtB15" value="txtB15" data-bv-field="txtB15"><i style="display: none;" class="form-control-feedback" data-bv-icon-for="txtB15"></i> </td>
-                  </tr>
-                                          <tr>
-                  <td>20 L Fix Bottle</td>
-                  <td><input type="number" class="form-control" id="txtB13" name="txtB13" value="txtB13" data-bv-field="txtB13"><i style="display: none;" class="form-control-feedback" data-bv-icon-for="txtB13"></i> </td>
-                  </tr>
-                      
-                </tbody></table>
-                </div>
-              
+                                                      <div class="form-group">
+                  <input type="hidden" class="form-control" name="txt_id" id="txt_id" value="325">
               </div>
-                <!-- /.col -->
-              
-              
 
-              
 
+              <div class="form-group"><label class="col-md-2">Agency Name <span style="color: red">*</span></label>
+              <label class="col-md-4">A 5 marketing</label>
+                  
+      <div class="col-md-6">&nbsp;</div>
+    </div>
+              <div class="form-group"><label class="col-md-2">Dealer  Name <span style="color: red">*</span></label>
+                <label class="col-md-4">Ashok giri</label>
+                  <div class="col-md-6">&nbsp;</div>
+              </div>
+
+    <div class="form-group"><label class="col-md-2">Bill Amount</label>
+                <label class="col-md-4">0</label>
+                  <div class="col-md-6">&nbsp;</div>
+              </div>
+              <div class="form-group"><label class="col-md-2">Total Pending</label>
+                <label class="col-md-4"></label>
+                  <div class="col-md-6">&nbsp;</div>
+              </div>
+              <div class="form-group"><label class="col-md-2">Date</label>
+                <div class="col-md-4"><input type="date" id="txt_Date" name="txt_Date" value="2021-09-01"></div>
+                  <div class="col-md-6">&nbsp;</div>
+              </div>
+              <div class="form-group has-feedback"><label class="col-md-2">Amount to Pay</label>
+                <div class="col-md-4"><input type="number" class="form-control" name="txtAmount" id="txtAmount" required="" data-bv-field="txtAmount"><i style="display: none;" class="form-control-feedback" data-bv-icon-for="txtAmount"></i><small style="display: none;" class="help-block" data-bv-validator="integer" data-bv-for="txtAmount" data-bv-result="NOT_VALIDATED">Please enter a valid number</small><small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="txtAmount" data-bv-result="NOT_VALIDATED">Please enter a value</small></div>
+                  <div class="col-md-6">&nbsp;</div>
+              </div>
+              <div class="form-group has-feedback"><label class="col-md-2">Kasar</label>
+                <div class="col-md-4"><input type="number" class="form-control" name="txtDiscount" id="txtDiscount" value="0" data-bv-field="txtDiscount"><i style="display: none;" class="form-control-feedback" data-bv-icon-for="txtDiscount"></i><small style="display: none;" class="help-block" data-bv-validator="integer" data-bv-for="txtDiscount" data-bv-result="NOT_VALIDATED">Please enter a valid number</small></div>
+                  <div class="col-md-6">&nbsp;</div>
+              </div>
+
+                              <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit" id="saveRecord"><strong>Collect</strong>
+                              </button>
+
+
+
+
+
+          </form>
             </div>
             <!-- /.row -->
 
@@ -561,9 +449,9 @@
          
         </div>
         <!-- /.card -->
-        <div class="card-footer">
-          <button type="submit" class="btn btn-primary">Add</button>
-        </div>
+
+        
+        
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
