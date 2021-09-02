@@ -365,12 +365,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Collector Customer Relation</h1>
+            <h1 class="m-0 text-dark">Attendance</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Collector Customer Relation</li>
+              <li class="breadcrumb-item active">Delivery Boy Monthly Transaction Report</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -392,49 +392,83 @@
 
               <div class="card-body">
                 
+                <!-- <div class="card-header" style="text-align:right;" >
+                  <button type="button"class="btn btn-primary"><a href="AddCustomer.html">Add New</a></button>
+                </div> -->
+                <div class="row">
+                <div class="col-md-6">
+                <div class="form-group searchboxtextbox">
+
+                  <label>Month <span style="color: red">*</span></label>
+      <div>
+        <select name="cmbArea" class="form-control " id="txt_area" required="">
+          <option value="">---Select---</option>
+                        
+          <option value="01">January</option>
+          <option value="02">Febuary</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08" selected="">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+  
+                                                </select>
+                                              <br/><input type="submit" value="Show" name="btnSubmit" class="btn btn-success">
+      </div>
+                  
+               </div>
+              
                
-                <div class="row"></div>
+  
+  </div> 
+          <div class="col-md-6">
+          <div class="form-group"> <label>Year <span style="color: red">*</span></label>
+          <input type="text"  class="form-control "></div>
+            </div>
+          
+  </div>
+                
                 <div class="" style="text-align:right;margin-bottom:10px;margin-top:10px;">
                   <div class="dt-buttons btn-group"><a class="btn btn-default buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Copy</span></a><a class="btn btn-default buttons-csv buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>CSV</span></a><a class="btn btn-default buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Excel</span></a><a class="btn btn-default buttons-pdf buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>PDF</span></a><a class="btn btn-default buttons-print" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Print</span></a></div>
                 </div>
 
                 <table id="example1" class="table table-bordered table-striped">
-                  <thead>
-                  <tr>
-                    <th>Collector Name</th>
-                    <th>Customer Name</th>
+                    <thead>
+                    <tr>
+                      <th>Delivery Boy</th>
+                      <th>Base Bottles Assigned</th>
+                      <th>End Of The Month Calculated Bottles</th>
+                      
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                     
+                      <td>ABHISHEK HOTILAL BATHAM</td>
+                     <td>159</td><td>158</td>
+                    </tr>
+                    <tr>
+                      <td>Jashu</td>
+                      <td>22</td><td>22</td>
+                     
+                    </tr>
                     
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>ABHISHEK HOTILAL BATHAM</td>
-                    <td>CHIRAG BHAI</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>ABHISHEK HOTILAL BATHAM</td>
-                    <td>JITU BHAI</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>ANIL DINESHBHAI RATHOD</td>
-                    <td>JAHIR BHAI</td>
-                    
-                  </tr>
-                  
-                  
-                  </tbody>
-                  <!-- <tfoot>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                  </tr>
-                  </tfoot> -->
-                </table>
+                    </tbody>
+                    <!-- <tfoot>
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+                      <th>Engine version</th>
+                      <th>CSS grade</th>
+                    </tr>
+                    </tfoot> -->
+                  </table>
               </div>
               <!-- /.card-body -->
             </div>

@@ -365,12 +365,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Collector Customer Relation</h1>
+            <h1 class="m-0 text-dark">Attendance</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Collector Customer Relation</li>
+              <li class="breadcrumb-item active">Delivery Boy Daily Transaction Report</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -392,49 +392,71 @@
 
               <div class="card-body">
                 
+                <!-- <div class="card-header" style="text-align:right;" >
+                  <button type="button"class="btn btn-primary"><a href="AddCustomer.html">Add New</a></button>
+                </div> -->
+                <div class="row">
+                <div class="col-md-6">
+                <div class="form-group searchboxtextbox">
+
+                  <label>From Date <span style="color: red">*</span></label>
+      <div>
+        <input type="date" class="form-control" id="txt_Date" name="txt_Date" value="2021-09-01">
+                                              <br/><input type="submit" value="Show" name="btnSubmit" class="btn btn-success">
+      </div>
+                  
+               </div>
+              
                
-                <div class="row"></div>
+  
+  </div> 
+          <div class="col-md-6">
+          <div class="form-group"> <label>To Date <span style="color: red">*</span></label>
+          <input type="date"  class="form-control "></div>
+            </div>
+          
+  </div>
+                
                 <div class="" style="text-align:right;margin-bottom:10px;margin-top:10px;">
                   <div class="dt-buttons btn-group"><a class="btn btn-default buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Copy</span></a><a class="btn btn-default buttons-csv buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>CSV</span></a><a class="btn btn-default buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Excel</span></a><a class="btn btn-default buttons-pdf buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>PDF</span></a><a class="btn btn-default buttons-print" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Print</span></a></div>
                 </div>
 
                 <table id="example1" class="table table-bordered table-striped">
-                  <thead>
-                  <tr>
-                    <th>Collector Name</th>
-                    <th>Customer Name</th>
+                    <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Delivery Boy</th>
+                      <th>20 L Bottle Fix Out</th> <th>20 L Bottle Fix In</th>
+                      <th>20 L Jug Fix Out</th> <th>20 L Jug Fix In</th>
+                      <th>20 L Bottle Out</th><th>20 L Bottle In</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>01/02/2021</td>
+                      <td>ABHISHEK HOTILAL BATHAM</td>
+                      <td></td><td></td>
+                      <td></td><td></td>
+                      <td>159</td><td>158</td>
+                    </tr>
+                    <tr><td>02/02/2021</td>
+                      <td>Jashu</td>
+                      <td>22</td><td>21</td>
+                      <td></td><td></td>
+                      <td></td><td></td>
+                    </tr>
                     
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>ABHISHEK HOTILAL BATHAM</td>
-                    <td>CHIRAG BHAI</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>ABHISHEK HOTILAL BATHAM</td>
-                    <td>JITU BHAI</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>ANIL DINESHBHAI RATHOD</td>
-                    <td>JAHIR BHAI</td>
-                    
-                  </tr>
-                  
-                  
-                  </tbody>
-                  <!-- <tfoot>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                  </tr>
-                  </tfoot> -->
-                </table>
+                    </tbody>
+                    <!-- <tfoot>
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+                      <th>Engine version</th>
+                      <th>CSS grade</th>
+                    </tr>
+                    </tfoot> -->
+                  </table>
               </div>
               <!-- /.card-body -->
             </div>
