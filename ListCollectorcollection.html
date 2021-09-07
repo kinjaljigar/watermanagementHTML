@@ -371,12 +371,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Attendance</h1>
+            <h1 class="m-0 text-dark">Collection Summary</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Delivery Boy Monthly Transaction Report</li>
+              <li class="breadcrumb-item active">Collection Summary</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -398,16 +398,13 @@
 
               <div class="card-body">
                 
-                <!-- <div class="card-header" style="text-align:right;" >
-                  <button type="button"class="btn btn-primary"><a href="AddCustomer.html">Add New</a></button>
-                </div> -->
                 <div class="row">
-                <div class="col-md-6">
-                <div class="form-group searchboxtextbox">
-
-                  <label>Month <span style="color: red">*</span></label>
-      <div>
-        <select name="cmbArea" class="form-control " id="txt_area" required="">
+                  <div class="col-md-6">
+                  <div class="form-group searchboxtextbox">
+  
+                    <label>Month <span style="color: red">*</span></label>
+        <div>
+                    <select name="cmbArea" class="form-control " id="txt_area" required="">
           <option value="">---Select---</option>
                         
           <option value="01">January</option>
@@ -424,57 +421,82 @@
           <option value="12">December</option>
   
                                                 </select>
-                                              <br/><input type="submit" value="Show" name="btnSubmit" class="btn btn-success">
-      </div>
-                  
-               </div>
-              
-               
-  
-  </div> 
-          <div class="col-md-6">
-          <div class="form-group"> <label>Year <span style="color: red">*</span></label>
-          <input type="text"  class="form-control "></div>
-            </div>
-          
-  </div>
+                                                <label>Area <span style="color: red">*</span></label>
+                                                <select name="cmbArea" class="form-control " id="txt_area" required="">
+                                                  <option value="">---Select---</option>
+                                                   
+                                                  <option value="11">Bapunagar</option>
+                                                  <option value="12">Ratan Pole</option>
+                                          
+                                                                                        </select>
+        </div>
+                    
+                 </div>
                 
+                 
+    
+    </div> 
+            <div class="col-md-6">
+            <div class="form-group"> <label>Year <span style="color: red">*</span></label>
+            <input type="text"  class="form-control ">
+            <br/><input style="margin-top: 7px;" type="submit" value="Show" name="btnSubmit" class="btn btn-success">
+          </div>
+              </div>
+            
+                 </div>
                 <div class="" style="text-align:right;margin-bottom:10px;margin-top:10px;">
                   <div class="dt-buttons btn-group"><a class="btn btn-default buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Copy</span></a><a class="btn btn-default buttons-csv buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>CSV</span></a><a class="btn btn-default buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Excel</span></a><a class="btn btn-default buttons-pdf buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>PDF</span></a><a class="btn btn-default buttons-print" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Print</span></a></div>
                 </div>
 
                 <table id="example1" class="table table-bordered table-striped">
-                    <thead>
-                    <tr>
-                      <th>Delivery Boy</th>
-                      <th>Base Bottles Assigned</th>
-                      <th>End Of The Month Calculated Bottles</th>
-                      
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                     
-                      <td>ABHISHEK HOTILAL BATHAM</td>
-                     <td>159</td><td>158</td>
-                    </tr>
-                    <tr>
-                      <td>Jashu</td>
-                      <td>22</td><td>22</td>
-                     
-                    </tr>
+                  <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>Month</th>
+                    <th>Collector Name</th>
+                    <th>Area</th>h>
+                    <th>No. Of Customers</th>
+                    <th>Total Bill</th>
+                    <th>Collection Done</th>
+                    <th>Collection Pending</th>
                     
-                    </tbody>
-                    <!-- <tfoot>
-                    <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform(s)</th>
-                      <th>Engine version</th>
-                      <th>CSS grade</th>
-                    </tr>
-                    </tfoot> -->
-                  </table>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>2</td>
+                    <td>1/2021</td>
+                    <td>CHINA MARKET-1</td>
+                    <td>sandip soni</td>
+                    <td>100</td>
+                    <td>3944</td>
+                    <td>4450</td>
+                    <td>3260</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>1/2021</td>
+                    <td>MANEKCHOWK-1</td>
+                    <td>Bijal soni</td>
+                    <td>90</td>
+                    <td>4450</td>
+                    <td>4450</td>
+                    <td>4450</td>
+                    
+                  </tr>
+                  
+                  </tbody>
+                  <!-- <tfoot>
+                  <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                  </tr>
+                  </tfoot> -->
+                </table>
               </div>
               <!-- /.card-body -->
             </div>
