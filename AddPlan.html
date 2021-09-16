@@ -78,12 +78,12 @@
                   <p>plan Master</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="ListCountry.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Country Master</p>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a href="ListState.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -180,10 +180,10 @@
                           <p>Delivery Boy  Base Bottle</p>
                         </a>
                       </li>
-                      <li class="nav-item">
+                       <li class="nav-item">
                         <a href="ListDelBoyAraRel.html" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
-                          <p>Delivery Boy Area Report</p>
+                          <p>Delivery Boy Area Relation</p>
                         </a>
                       </li>
                       <li class="nav-item">
@@ -235,10 +235,10 @@
                               <p>Dealer Master</p>
                             </a>
                           </li>
-                          <li class="nav-item">
+                           <li class="nav-item">
                             <a href="ListDealerPlanRel.html" class="nav-link">
                               <i class="far fa-circle nav-icon"></i>
-                              <p>Dealer Plan Relation</p>
+                              <p>Dealer Rate Information</p>
                             </a>
                           </li>
                           <li class="nav-item">
@@ -293,13 +293,13 @@
                               <li class="nav-item">
                                 <a href="ListCollectorCustRel.html" class="nav-link">
                                   <i class="far fa-circle nav-icon"></i>
-                                  <p>Collector - Customer Report</p>
+                                  <p>Collector Customer Relation</p>
                                 </a>
                               </li>
                               <li class="nav-item">
                                 <a href="ListCollectorcollection.html" class="nav-link">
                                   <i class="far fa-circle nav-icon"></i>
-                                  <p>Collector Monthly Report</p>
+                                  <p>Collector Monthly Summery</p>
                                 </a>
                               </li>
                              
@@ -378,35 +378,65 @@
     <section class="content">
       <div class="container-fluid">
         <form role="form">
-          <div class="card-body col-md-6">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Plan Name<span style="color:red">*</span></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" >
+          
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Plan Name<span style="color:red">*</span></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1"><label>Plan Type <span style="color:red">*</span></label></label>
+                    <select class="form-control select2" style="width: 100%;">
+                      
+                      <option>Daily</option>
+                      <option>Monthly</option>
+                      
+                    </select>
+                  </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1"><label>Plan Type <span style="color:red">*</span></label></label>
-              <select class="form-control select2" style="width: 100%;">
-                
-                <option>Daily</option>
-                <option>Monthly</option>
-                
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Bottle Type <span style="color:red">*</span></label>
-              <select class="form-control select2" style="width: 100%;">
-                
-                <option>15 L Jug</option>
-                <option>20 L Jug</option>
-                
-              </select>
+            <div class="col-md-6">
+              <div class="form-group">
+              <label for="exampleInputEmail1">Default Bottles In This Package <span style="color:red">*</span></label>
+              <input type="text" class="form-control" id="exampleInputEmail1" >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"><label>Minimum Bottles In This Package  <span style="color:red">*</span></label></label>
+                <input type="text" class="form-control" id="exampleInputEmail1" >
+              </div>
             </div>
 
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Bottle Type <span style="color:red">*</span></label>
+                <select class="form-control select2" style="width: 100%;">
+                  
+                  <option>15 L Jug</option>
+                  <option>20 L Jug</option>
+                  
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Rate<span style="color:red">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" >
+              </div>
+        </div>
+
+        <div class="col-md-6">
+         
+          <div class="form-group">
+            <label for="exampleInputEmail1">Extra Rate per Bottle<span style="color:red">*</span></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" >
+          </div>
+    </div>
+          </div>
             
-            <div class="form-group">
-              <label for="exampleInputEmail1">Rate<span style="color:red">*</span></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" >
-            </div>
+            
+            
+
+            
+            
 
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -438,19 +468,7 @@
             </div>
 
               <br/>
-            <div class="form-group">
-              <label for="exampleInputPassword1"><label>Default Bottles In This Package <span style="color:red">*</span></label></label>
-              <input type="text" class="form-control" id="exampleInputPassword1" >
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputPassword1"><label>Minimum Limit Bottles In This Package <span style="color:red">*</span></label></label>
-              <input type="text" class="form-control" id="exampleInputPassword1" >
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1"><label>Extra Bottle Rates (Rate per Bottle) <span style="color:red">*</span></label></label>
-              <input type="text" class="form-control" id="exampleInputPassword1" >
-            </div>
+           
             
           </div>
           <!-- /.card-body -->
@@ -472,338 +490,7 @@
     reserved.
   </footer>
 
-  <!-- Control Sidebar -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">Dashboard</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
-         
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Master
-                <i class="fas fa-angle-left right"></i>
-                <!-- <span class="badge badge-info right">6</span> -->
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="ListBottleType.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Bottler Type Master</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="ListPlan.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>plan Master</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="ListCountry.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Country Master</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="ListState.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>State Master</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="ListCity.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>City Master</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="ListArea.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Area Master</p>
-                </a>
-              </li>
-             
-            </ul>
-
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
-         
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-copy"></i>
-                  <p>
-                    Customer Management
-                    <i class="fas fa-angle-left right"></i>
-                    
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="ListCustomer.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Customer</p>
-                    </a>
-                  </li>
-                
-                  <li class="nav-item">
-                    <a href="ListCusBoyDailyRel.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Customer Delivery Boy <br/>Relation Report</p>
-                    </a>
-                  </li>
-                
-
-                  <li class="nav-item">
-                    <a href="AddCustDailyTransaction.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Daily Transaction Report</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="AddCustMonthlyTransaction.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Monthly Transaction Report</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ListClosedCustomer.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Closed Customer</p>
-                    </a>
-                  </li>
-                  
-                 
-                </ul>
-
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
-         
-                  <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                      <i class="nav-icon fas fa-copy"></i>
-                      <p>
-                        Delivery Boy Management
-                        <i class="fas fa-angle-left right"></i>
-                        
-                      </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                      <li class="nav-item">
-                        <a href="ListDeliveryBoy.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Delivery Boy Master</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="ListDeliveryBoyBaseBottle.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Delivery Boy  Base Bottle</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="ListDelBoyAraRel.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Delivery Boy Area Report</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="ListCusBoyDailyRel.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Delivery Boy - Customer <br/>Relation Report</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="ListDelBoyInOut.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Delivery Boy In/Out</p>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="RptDBDailyTransaction.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Daily Transaction Report</p>
-                        </a>
-                      </li>
-                     <li class="nav-item">
-                        <a href="RptDBMonthlyTransaction.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Monthly Transaction Report</p>
-                        </a>
-                      </li>
-
-                      <!-- <li class="nav-item">
-                        <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                          <i class="far fa-circle nav-icon"></i>
-                          <p>Payment Calculation Report</p>
-                        </a>
-                      </li> -->
-                      
-                     
-                    </ul>
-
-
-
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
-         
-                      <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                          <i class="nav-icon fas fa-copy"></i>
-                          <p>
-                            Dealer Management
-                            <i class="fas fa-angle-left right"></i>
-                            
-                          </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                          <li class="nav-item">
-                            <a href="ListDealer.html" class="nav-link">
-                              <i class="far fa-circle nav-icon"></i>
-                              <p>Dealer Master</p>
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a href="ListDealerPlanRel.html" class="nav-link">
-                              <i class="far fa-circle nav-icon"></i>
-                              <p>Dealer Plan Relation</p>
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a href="ListDealerDailyTran.html" class="nav-link">
-                              <i class="far fa-circle nav-icon"></i>
-                              <p>Dealer Daily Transaction</p>
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a href="ListDealerDateWiseTrans.html" class="nav-link">
-                              <i class="far fa-circle nav-icon"></i>
-                              <p>Datewise <br/>Transaction Report</p>
-                            </a>
-                          </li>
-                          <!-- <li class="nav-item">
-                            <a href="rptDealerLedger.html" class="nav-link">
-                              <i class="far fa-circle nav-icon"></i>
-                              <p>Dealer Ledger</p>
-                            </a>
-                          </li> -->
-                          
-                          
-                         
-                        </ul>
-
-
-                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
-         
-                          <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                              <i class="nav-icon fas fa-copy"></i>
-                              <p>
-                                Collector Management
-                                <i class="fas fa-angle-left right"></i>
-                                
-                              </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                              <li class="nav-item">
-                                <a href="ListCollector.html" class="nav-link">
-                                  <i class="far fa-circle nav-icon"></i>
-                                  <p>Collectors</p>
-                                </a>
-                              </li>
-                              <!-- <li class="nav-item">
-                                <a href="ListCollectorAraRel.html" class="nav-link">
-                                  <i class="far fa-circle nav-icon"></i>
-                                  <p>Collector - Area Relation <br/>Report</p>
-                                </a>
-                              </li> -->
-                              <li class="nav-item">
-                                <a href="ListCollectorCustRel.html" class="nav-link">
-                                  <i class="far fa-circle nav-icon"></i>
-                                  <p>Collector - Customer Report</p>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="ListCollectorcollection.html" class="nav-link">
-                                  <i class="far fa-circle nav-icon"></i>
-                                  <p>Collector Monthly Report</p>
-                                </a>
-                              </li>
-                             
-                              
-                             
-                            </ul>
-
-
-
-                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
-         
-                              <li class="nav-item has-treeview">
-                                <a href="#" class="nav-link">
-                                  <i class="nav-icon fas fa-copy"></i>
-                                  <p>
-                                    Bill Management
-                                    <i class="fas fa-angle-left right"></i>
-                                    
-                                  </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                  <li class="nav-item">
-                                    <a href="GenerateInvoice.html" class="nav-link">
-                                      <i class="far fa-circle nav-icon"></i>
-                                      <p>Generate Invoice</p>
-                                    </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a href="ListCustInvoice.html" class="nav-link">
-                                      <i class="far fa-circle nav-icon"></i>
-                                      <p>Customer Invoice List</p>
-                                    </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a href="ListDealerInvoice.html" class="nav-link">
-                                      <i class="far fa-circle nav-icon"></i>
-                                      <p>Dealer Invoice List</p>
-                                    </a>
-                                  </li>
-                                 
-                                  
-                                 
-                                </ul>
-          </li>
-         
-          
-          
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-  <!-- /.control-sidebar -->
+ 
 </div>
 <!-- ./wrapper -->
 

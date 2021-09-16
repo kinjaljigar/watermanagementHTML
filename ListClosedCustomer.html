@@ -80,12 +80,12 @@
                   <p>plan Master</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="ListCountry.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Country Master</p>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a href="ListState.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -135,16 +135,16 @@
                   </li>
                 
 
-                  <li class="nav-item">
+                   <li class="nav-item">
                     <a href="AddCustDailyTransaction.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Daily Transaction Report</p>
+                      <p>Daily Attendance</p>
                     </a>
                   </li>
-                  <li class="nav-item">
+                   <li class="nav-item">
                     <a href="AddCustMonthlyTransaction.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Monthly Transaction Report</p>
+                      <p>Monthly Attendance</p>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -182,10 +182,10 @@
                           <p>Delivery Boy  Base Bottle</p>
                         </a>
                       </li>
-                      <li class="nav-item">
+                       <li class="nav-item">
                         <a href="ListDelBoyAraRel.html" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
-                          <p>Delivery Boy Area Report</p>
+                          <p>Delivery Boy Area Relation</p>
                         </a>
                       </li>
                       <li class="nav-item">
@@ -200,18 +200,18 @@
                           <p>Delivery Boy In/Out</p>
                         </a>
                       </li>
-                      <li class="nav-item">
+                      <!-- <li class="nav-item">
                         <a href="RptDBDailyTransaction.html" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
                           <p>Daily Transaction Report</p>
                         </a>
                       </li>
-                     <li class="nav-item">
+                      <li class="nav-item">
                         <a href="RptDBMonthlyTransaction.html" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
                           <p>Monthly Transaction Report</p>
                         </a>
-                      </li>
+                      </li> -->
 
                       <!-- <li class="nav-item">
                         <a href="pages/layout/fixed-topnav.html" class="nav-link">
@@ -244,10 +244,10 @@
                               <p>Dealer Master</p>
                             </a>
                           </li>
-                          <li class="nav-item">
+                           <li class="nav-item">
                             <a href="ListDealerPlanRel.html" class="nav-link">
                               <i class="far fa-circle nav-icon"></i>
-                              <p>Dealer Plan Relation</p>
+                              <p>Dealer Rate Information</p>
                             </a>
                           </li>
                           <li class="nav-item">
@@ -256,10 +256,10 @@
                               <p>Dealer Daily Transaction</p>
                             </a>
                           </li>
-                          <li class="nav-item">
+                           <li class="nav-item">
                             <a href="ListDealerDateWiseTrans.html" class="nav-link">
                               <i class="far fa-circle nav-icon"></i>
-                              <p>Datewise <br/>Transaction Report</p>
+                              <p>Dealer Total <br/>Transaction Report</p>
                             </a>
                           </li>
                           <!-- <li class="nav-item">
@@ -302,13 +302,13 @@
                               <li class="nav-item">
                                 <a href="ListCollectorCustRel.html" class="nav-link">
                                   <i class="far fa-circle nav-icon"></i>
-                                  <p>Collector - Customer Report</p>
+                                  <p>Collector Customer Relation</p>
                                 </a>
                               </li>
                               <li class="nav-item">
                                 <a href="ListCollectorcollection.html" class="nav-link">
                                   <i class="far fa-circle nav-icon"></i>
-                                  <p>Collector Monthly Report</p>
+                                  <p>Collector Monthly Summery</p>
                                 </a>
                               </li>
                              
@@ -399,17 +399,39 @@
               <div class="card-body">
                 
                
-                <div class="row"></div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group searchboxtextbox">
+    
+                      
+                                                  <label>Area <span style="color: red">*</span></label>
+                                                  <select name="cmbArea" class="form-control " id="txt_area" required="">
+                                                    <option value="">---Select---</option>
+                                                     
+                                                    <option value="11">Bapunagar</option>
+                                                    <option value="12">Ratan Pole</option>
+                                            
+                                                                                          </select>
+                                                                                          <br/><input style="margin-top: 7px;" type="submit" value="Show" name="btnSubmit" class="btn btn-success">
+                                                                                          
+          </div>
+                      
+                   </div>
+                 
+                   
+      
+      </div> 
+                
                 <div class="" style="text-align:right;margin-bottom:10px;margin-top:10px;">
                   <div class="dt-buttons btn-group"><a class="btn btn-default buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Copy</span></a><a class="btn btn-default buttons-csv buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>CSV</span></a><a class="btn btn-default buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Excel</span></a><a class="btn btn-default buttons-pdf buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>PDF</span></a><a class="btn btn-default buttons-print" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Print</span></a></div>
                 </div>
 
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
-                  <tr>
+                  <tr><th>Seq. No.</th>
                     <th>Firm<br/>Name</th>
                     <th>Customer</th>
-                    <th>Seq. No.</th>
+                    
                     <th>Plan</th>
                     <th>No. Of Bottles</th>
                     <th>Rate</th>
@@ -422,10 +444,10 @@
                   </tr>
                   </thead>
                   <tbody>
-                  <tr>
+                  <tr> <td>1</td>
                     <td>Kamleshkumar kantilal ni co.</td>
                     <td>Shailesh bhai</td>
-                    <td>1</td>
+                   
                     <td>Without Sunday</td>
                     <td>2</td>
                     <td>600</td>
@@ -437,10 +459,10 @@
                     <td><a href="AddCustomer.html"><i class="fa fa-edit" style="font-size: large"></i></a></td>
                     <td><i class="fa fa-trash" style="font-size: large"></i></td>
                   </tr>
-                  <tr>
+                  <tr> <td>1</td>
                     <td>S K ENGINEERING</td>
                     <td>PRIYANK BHAI</td>
-                    <td>1</td>
+                   
                     <td>Without Sunday</td>
                     <td>2</td>
                     <td>600</td>
